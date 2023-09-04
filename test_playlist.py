@@ -18,7 +18,7 @@ def create_playlist(userList, playList, limit):
 
     return playlist_dict
 
-
+#to store new data
 def check_playlist(new_user, new_song, index, playlist_dict=playlist_dict):
     for i in range(len(new_user)):
         if new_user[i] not in playlist_dict:  # checing if user is existing
