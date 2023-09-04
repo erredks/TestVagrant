@@ -3,7 +3,7 @@ playlist_dict = dict()  # intializing a dictionary to store users and there play
 
 def create_playlist(userList, playList, limit):
     for i in range(len(userList)):
-        user_key = userList[i]  # input("enter user name: ")  # storing username
+        user_key = userList[i]  # storing username
         play_list = list()  # initialising blank list to store playlist song
 
         for j in range(len(playList[i])):  # traversing through songs in playlist
