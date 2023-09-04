@@ -22,12 +22,12 @@ def create_playlist(userList, playList, limit):
 def check_playlist(new_user, new_song, index, playlist_dict=playlist_dict):
     for i in range(len(new_user)):
         if new_user[i] not in playlist_dict:  # checing if user is existing
-            play_list = [new_song[i]]
-            playlist_dict[new_user[i]] = play_list
+            play_list = [new_song[i]]               #storing new data into new list
+            playlist_dict[new_user[i]] = play_list  #storing new data to correspoding key
         else:
-            playlist_dict[new_user[i]].append(new_song[i])
+            playlist_dict[new_user[i]].append(new_song[i])      #if user exist, then appeding the data at the end of the list
         if len(playlist_dict[new_user[i]]) > index:
-            playlist_dict[new_user[i]].pop(0)
+            playlist_dict[new_user[i]].pop(0)                   #removing 1st item if capacity is full
     print("new playlist => ", end="")
     print(playlist_dict)
 
