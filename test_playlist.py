@@ -1,7 +1,7 @@
 playlist_dict = dict()  # intializing a dictionary to store users and there playlist in key value pair
 
 
-def playlist(userList, playList, limit):
+def create_playlist(userList, playList, limit):
     for i in range(len(userList)):
         user_key = userList[i]  # input("enter user name: ")  # storing username
         play_list = list()  # initialising blank list to store playlist song
@@ -30,6 +30,4 @@ def check_playlist(new_user, new_song, index, playlist_dict=playlist_dict):
             playlist_dict[new_user[i]].pop(0)
     print("new playlist => ", end="")
     print(playlist_dict)
-
-
 
