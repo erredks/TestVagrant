@@ -1,7 +1,7 @@
 from TestVagrant import test_playlist
 
 
-def test_goodslow():
+def test_goodflow():
     userList = ['bhaskar', "digvijay"]
     playList = [['s1', 's2', 's1', 's3', "s2", "s1"], ['s4', 's5', 's6']]
     limit = 2
